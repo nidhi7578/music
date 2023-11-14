@@ -24,6 +24,10 @@ server.listen(port,function(error){
     }
 })
 
+
+
+
+
 2.	Implement URL parameter routing to display specific content based on the URL.(Eg: ‘/’, ‘/home’, ‘/profile’, etc.,)
 
 
@@ -67,6 +71,9 @@ app.listen(4000, () => {
 
 
 
+
+
+
 3.	Create a route that returns a JSON response containing your name and email.
 
 const express = require('express');
@@ -87,12 +94,16 @@ app.listen(PORT, () => {
 });
 
 
+
+
+
+
+
+
+
 4.	Implement a route that accepts POST requests and logs the request data to the console.
 
-
-
-
-Indes.js:
+index.html:
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -159,8 +170,12 @@ app.listen(port, () => {
 console.log(`Server is running at http://localhost:${port}`);
 });
 
-5.	Set up a static file server to serve HTML, CSS, and JavaScript files.
 
+
+
+
+
+5.	Set up a static file server to serve HTML, CSS, and JavaScript files.
 
 Server.js:
 const http = require('http');
@@ -217,6 +232,8 @@ server.listen(port, () => {
 console.log(`Server running at http://localhost:${port}/`);
 });
 
+
+
 Staticsfiles:
 index.js:
 <!DOCTYPE html>
@@ -254,6 +271,12 @@ body {
     color: #666;
     }
 
+
+
+
+
+
+
 6.	Use the Express.js framework to create a basic web application with routing.
 
 const express=require('express');
@@ -278,6 +301,12 @@ app.get('/contact',(req,res)=>{
 app.listen(port,()=>{
     console.log(`Server is running on ${port}`)
 })
+
+
+
+
+
+
 
 7.	Create a custom 404 error page for handling undefined routes.
 
@@ -307,6 +336,11 @@ app.use((re,res,next)=>{
 app.listen(port,()=>{
     console.log(`Server is running on ${port}`)
 })
+
+
+
+
+
 
 8.	Secure your routes with basic authentication using middleware.
 
@@ -350,6 +384,12 @@ app.listen(port, () => {
     console.log(`Server running at http://localhost:${port}/`);
 });
 
+
+
+
+
+
+
 9.	Create a RESTful API that returns data in JSON format.
 
 const express = require("express");
@@ -376,6 +416,9 @@ app.get("/api/books/:id", (req, res) => {
 app.listen(port, () => {
   console.log(`Server is running at http://localhost:${port}`);
 });
+
+
+
 
 
 
@@ -406,6 +449,11 @@ app.get("/api/books/:id", (req, res) => {
 app.listen(port, () => {
   console.log(`Server is running at http://localhost:${port}`);
 });
+
+
+
+
+
 
 
 11.	Implement Web Sockets for real-time communication in your application (Implement Socket.io library).
@@ -466,6 +514,12 @@ server.listen(PORT, () => {
 </html>
 
 
+
+
+
+
+
+
 12.	Enhance security by hashing and salting user passwords before storing them in the database. (use bcrypt).
 
 
@@ -500,6 +554,13 @@ hashPassword(userPassword)
     .catch(error => {
         // Handle errors
     });
+
+
+
+
+
+
+
 
 13.	JWT Token Validation: Implement token validation middleware to ensure the integrity of JSON Web Tokens (JWT).
 
@@ -594,8 +655,16 @@ axios
   });
 
 
+
+
+
+
 14.	Develop the backend server application for an authentication system (login, register).
 Same a bigger7
+
+
+
+
 15.	Read and parse a JSON file, then display its contents in a structured format.
 
 
@@ -637,6 +706,12 @@ readAndDisplayJson();
 "place" : "nellore"
 }
 
+
+
+
+
+
+
 16.	File system in Node js: Create a new text file and perform read, write, and append operations.
 
 //write
@@ -657,6 +732,12 @@ var fs=require('fs');
 fs.appendFile("write.txt","console.log('hello')",function(err){
 console.log("added successfully")
 })
+
+
+
+
+
+
 
 17.	 File system in Node js: Perform rename a file and copy a file to another file, delete file operations. 
 
@@ -692,6 +773,8 @@ var fs=require('fs');
 fs.unlink("file.txt",function(err){
     console.log("file deleted")
 })
+
+
 
 
 
@@ -792,8 +875,12 @@ const Task = mongoose.model('Task', taskSchema);
 module.exports = Task;
 
 
+
+
+
 2.	Develop the backend (Node Js, Express Js, MongoDB) for a CRUD application.
 Same as above
+
 
 
 
@@ -846,6 +933,12 @@ app.post('/send-mail', async (req, res) => {
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
+
+
+
+
+
+
 
 
 4.	Develop the backend for a job portal using Node JS, Express JS, MongoDB. Perform important functionalities such as add new job, update job, apply for job, approve job application, etc.,
@@ -985,6 +1078,15 @@ const Application = mongoose.model('Application', applicationSchema);
 module.exports = { Job, Application };
 
 
+
+
+
+
+
+
+
+
+
 5.	Develop a simple calculator using plain JavaScript or any frontend library (no server required). 
 
 <!DOCTYPE html>
@@ -1088,6 +1190,15 @@ module.exports = { Job, Application };
 </html>
 
 
+
+
+
+
+
+
+
+
+
 6.	Develop a simple BMI calculator using plain JavaScript or any frontend library.
 
 
@@ -1163,6 +1274,13 @@ module.exports = { Job, Application };
     </div>
 </body>
 </html>
+
+
+
+
+
+
+
 
 
 7.	Develop a simple authentication (login, register) app (both frontend and backend).
@@ -1335,6 +1453,15 @@ Signup.ejs:
     </div>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
 
 8.	Develop a currency conversion application with the conversion rates stored in the backend database.
 
